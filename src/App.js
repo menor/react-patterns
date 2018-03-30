@@ -3,7 +3,7 @@ import Toggle from './components/Toggle'
 
 class App extends Component {
   render() {
-    return <Toggle />
+    return <Toggle onToggle={on => console.log('toggle', on)} />
   }
 }
 

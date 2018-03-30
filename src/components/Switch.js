@@ -19,16 +19,16 @@ const Input = styled.input`
 const Button = styled.button`
   background: ${({on}) => on ? '#86d993' : '#fbfbfb'};
   border: 1px solid #e8eae9;
-  border-radius: 2em;
+  border-radius: 1.5rem;
   cursor: pointer;
   display: inline-block;
-  height: 2em;
+  height: 1.5rem;
   outline: 0;
   position: relative;
   padding: 2px;
   transition: all 0.4s ease;
   user-select: none;
-  width: 4em;
+  width: 2.5rem;
 
   &:active {
     ${({on}) => on && css` box-shadow: none; `};

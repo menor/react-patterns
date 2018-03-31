@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Toggle from './components/Toggle'
 import CompoundToggle from './components/CompoundToggle'
+import ContextToggle from './components/ContextToggle'
 
 class App extends Component {
   render() {
@@ -14,6 +15,14 @@ class App extends Component {
           <CompoundToggle.Button />
           <CompoundToggle.On>On</CompoundToggle.On>
         </CompoundToggle>
+        <h3>Context Toggle</h3>
+        <ContextToggle onToggle={on => console.log('toggle', on)}>
+          <ContextToggle.Off>Off</ContextToggle.Off>
+          <div>
+            <ContextToggle.Button />
+            <ContextToggle.On>On</ContextToggle.On>
+          </div>
+        </ContextToggle>
       </div>
     )
   }
